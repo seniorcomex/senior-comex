@@ -48,6 +48,27 @@ footer img{height:90px;margin-bottom:20px}
 
 <section id="quem">
 <h2>Quem Somos</h2>
+<div style="max-width:900px;margin:30px auto;">
+    <img id="slider" src="foto1.jpeg"
+    style="width:100%;border-radius:12px;box-shadow:0 4px 12px rgba(0,0,0,.15);">
+</div>
+
+<script>
+const fotos = [
+  "foto1.jpeg",
+  "foto2.jpeg",
+  "foto3.jpeg",
+  "foto4.jpeg",
+  "foto5.jpeg"
+];
+
+let atual = 0;
+
+setInterval(function() {
+  atual = (atual + 1) % fotos.length;
+  document.getElementById("slider").src = fotos[atual];
+}, 3000);
+</script>
 <p>A Senior Assessoria em Comércio Exterior Ltda é uma empresa especializada em Despacho Aduaneiro, Importação, Exportação e Assessoria em Comércio Exterior, atuando desde 2007 com foco em segurança, agilidade e excelência operacional.</p><br>
 <p>Localizada estrategicamente em Santos/SP, principal porta de entrada e saída do comércio exterior brasileiro, a Senior oferece suporte completo aos seus clientes em todas as etapas do processo aduaneiro, desde a análise documental até a liberação final da carga.</p><br>
 <p>Nossa equipe é formada por profissionais experientes e altamente qualificados, preparados para atender operações de diferentes portes e segmentos, sempre buscando otimizar prazos, reduzir riscos e garantir conformidade com a legislação vigente.</p>
