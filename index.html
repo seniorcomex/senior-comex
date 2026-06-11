@@ -112,21 +112,22 @@ footer img{height:90px;margin-bottom:20px}
 <section class="alt">
 <h2>Solicite um Atendimento</h2>
 
-<form style="max-width:800px;margin:auto;display:flex;flex-direction:column;gap:15px">
+<form action="https://formspree.io/f/xojznznb" method="POST"
+style="max-width:800px;margin:auto;display:flex;flex-direction:column;gap:15px">
 
-<input type="text" placeholder="Nome Completo" required
+<input type="text" name="nome" placeholder="Nome Completo" required>
 style="padding:12px;border:1px solid #ccc;border-radius:8px;">
 
-<input type="text" placeholder="Empresa"
+<input type="text" name="empresa" placeholder="Empresa">
 style="padding:12px;border:1px solid #ccc;border-radius:8px;">
 
-<input type="email" placeholder="E-mail" required
+<input type="email" name="email" placeholder="E-mail" required>
 style="padding:12px;border:1px solid #ccc;border-radius:8px;">
 
-<input type="tel" placeholder="Telefone"
+<input type="tel" name="telefone" placeholder="Telefone">
 style="padding:12px;border:1px solid #ccc;border-radius:8px;">
 
-<textarea rows="6" placeholder="Descreva sua necessidade ou solicitação"
+<textarea name="mensagem" rows="6" placeholder="Descreva sua necessidade ou solicitação"></textarea>
 style="padding:12px;border:1px solid #ccc;border-radius:8px;"></textarea>
 
 <button type="submit"
